@@ -21,9 +21,6 @@ TARGET_SCREEN_DENSITY := 420
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-# Include
-TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
-
 # Kernel
 TARGET_KERNEL_CONFIG := cedric_defconfig
 
