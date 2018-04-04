@@ -16,3 +16,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_montana.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_montana-user \
+    lineage_montana-userdebug \
+    lineage_montana-eng
