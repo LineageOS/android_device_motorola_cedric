@@ -1,0 +1,17 @@
+hwbinder_use(hal_fingerprint_default)
+vndbinder_use(hal_fingerprint_default)
+
+# Check if hwservicemanager is ready
+get_prop(hal_fingerprint_default, hwservicemanager_prop)
+
+# Add com.fingerprints.extension::IFingerprint* service to hwservicemanager
+add_hwservice(hal_fingerprint_default, fpc_extension_service)
+
+# Allow hal_fingerprint_default to add and find fpc_extension_service
+allow hal_fingerprint_default fpc_extension_service:hwservice_manager { add find };
+
+allow hal_fingerprint_default fingerprint_data_file:dir rw_dir_perms;
+allow hal_fingerprint_default fingerprint_data_file:file create_file_perms;
+
+allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
+
