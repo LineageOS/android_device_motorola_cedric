@@ -165,7 +165,7 @@ vendor/lib/libmmcamera_s5k3p3.so
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|7574aa1db5fc0a8343cdd8910e62994d650fbe59
 vendor/framework/com.fingerprints.extension.jar
 vendor/lib/com.fingerprints.extension@1.0_vendor.so
 
