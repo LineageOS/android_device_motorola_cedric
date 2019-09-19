@@ -1,3 +1,6 @@
 # Fingerprint
 /sys/devices/soc/78b5000.spi/spi_master/spi1/spi1.0(/.*)? u:object_r:sysfs_devices_fingerprint:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-fpcservice u:object_r:hal_fingerprint_default_exec:s0
+
+# Touch
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.montana u:object_r:hal_lineage_touch_default_exec:s0
