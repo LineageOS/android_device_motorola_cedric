@@ -8,6 +8,7 @@ etc/acdbdata/Headset_cal.acdb:vendor/etc/acdbdata/Headset_cal.acdb
 etc/acdbdata/Speaker_cal.acdb:vendor/etc/acdbdata/Speaker_cal.acdb
 
 # Camera
+-app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED
 etc/permissions/privapp-permissions-com.motorola.cameraone.xml
 lib/libmot-qc-fd-offline.so:vendor/lib/libmot-qc-fd-offline.so
 lib/libmot_lux_standardization.so:vendor/lib/libmot_lux_standardization.so
