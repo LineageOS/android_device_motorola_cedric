@@ -2,16 +2,16 @@
 ##  are from cedric_retail 8.1.0 OPP28.85-19-4-2
 
 # Audio ACDB
-etc/acdbdata/Bluetooth_cal.acdb:vendor/etc/acdbdata/Bluetooth_cal.acdb
-etc/acdbdata/General_cal.acdb:vendor/etc/acdbdata/General_cal.acdb
-etc/acdbdata/Global_cal.acdb:vendor/etc/acdbdata/Global_cal.acdb
-etc/acdbdata/Handset_cal.acdb:vendor/etc/acdbdata/Handset_cal.acdb
-etc/acdbdata/Hdmi_cal.acdb:vendor/etc/acdbdata/Hdmi_cal.acdb
-etc/acdbdata/Headset_cal.acdb:vendor/etc/acdbdata/Headset_cal.acdb
-etc/acdbdata/Speaker_cal.acdb:vendor/etc/acdbdata/Speaker_cal.acdb
+system/etc/acdbdata/Bluetooth_cal.acdb:vendor/etc/acdbdata/Bluetooth_cal.acdb
+system/etc/acdbdata/General_cal.acdb:vendor/etc/acdbdata/General_cal.acdb
+system/etc/acdbdata/Global_cal.acdb:vendor/etc/acdbdata/Global_cal.acdb
+system/etc/acdbdata/Handset_cal.acdb:vendor/etc/acdbdata/Handset_cal.acdb
+system/etc/acdbdata/Hdmi_cal.acdb:vendor/etc/acdbdata/Hdmi_cal.acdb
+system/etc/acdbdata/Headset_cal.acdb:vendor/etc/acdbdata/Headset_cal.acdb
+system/etc/acdbdata/Speaker_cal.acdb:vendor/etc/acdbdata/Speaker_cal.acdb
 
 # Camera
-lib/libmot_lux_standardization.so:vendor/lib/libmot_lux_standardization.so
+system/lib/libmot_lux_standardization.so:vendor/lib/libmot_lux_standardization.so
 vendor/lib/libchromaflash.so
 vendor/lib/libgralloc1.so
 vendor/lib/libjpegdhw.so
