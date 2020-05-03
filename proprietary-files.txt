@@ -28,7 +28,7 @@ vendor/lib/libgralloc1.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
-vendor/lib/libjscore.so
+vendor/lib/libjscore.so|19668b0e1640ea32b52982028005f337f041e126
 vendor/lib/libjustshoot.so
 vendor/lib/libllvd_smore.so
 vendor/lib/libmm-disp-apis.so
