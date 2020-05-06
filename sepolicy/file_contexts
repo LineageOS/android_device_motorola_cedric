@@ -1,55 +1,5 @@
-# Block devices
-/dev/block/mmcblk0p35                                    u:object_r:metadata_block_device:s0
-/dev/block/bootdevice/by-name/metadata                   u:object_r:metadata_block_device:s0
-/dev/block/bootdevice/by-name/persist                    u:object_r:persist_block_device:s0
-
-# Camera
-/dev/laser                                               u:object_r:laser_device:s0
-/sys/devices/virtual/input/input7/enable_ps_sensor       u:object_r:sysfs_laser:s0
-/sys/devices/soc/1b00000.qcom,msm-cam/media0/model       u:object_r:sysfs_camera_device:s0
-/(vendor|system/vendor)/bin/hw/motorola\.hardware\.camera\.provider@2\.4-service u:object_r:hal_camera_default_exec:s0
-
-# Capsense
-/sys/class/capsense(/.*)?                                u:object_r:sysfs_capsense:s0
-/sys/class/input/input5/capsense_top(/.*)?               u:object_r:sysfs_capsense:s0
-/sys/class/input/input6/capsense_bottom(/.*)?            u:object_r:sysfs_capsense:s0
-/(vendor|system/vendor)/bin/capsense_reset               u:object_r:capsense_reset_exec:s0
-
-# Charge only mode
-/(vendor|system/vendor)/bin/charge_only_mode             u:object_r:charge_only_exec:s0
-
-# DRM
-/vendor/bin/hw/android\.hardware\.drm@1\.1-service\.clearkey         u:object_r:hal_drm_clearkey_exec:s0
-/vendor/bin/hw/android\.hardware\.drm@1\.1-service\.widevine         u:object_r:hal_drm_widevine_exec:s0
-
 # Fingerprint
 /dev/esfp0                                               u:object_r:fingerprint_device:s0
-/data/fpc                                                u:object_r:fingerprint_data_file:s0
-/data/fpc/socket                                         u:object_r:fingerprint_socket:s0
 /sys/devices/soc/0.et320/etspi_enable                    u:object_r:sysfs_devices_fingerprint:s0
 /sys/devices/platform/egis_input(/.*)?                   u:object_r:sysfs_devices_fingerprint:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service-ets u:object_r:hal_fingerprint_default_exec:s0
-
-# Fsg
-/fsg                                                     u:object_r:fsg_firmware_file:s0
-/(vendor|system/vendor)/fsg                              u:object_r:fsg_firmware_file:s0
-
-# Init scripts
-/(vendor|system/vendor)/bin/init\.mmi\.(laser|usb)\.sh u:object_r:qti_init_shell_exec:s0
-
-# Input devices
-/(vendor|system/vendor)/usr/idc(/.*)?                    u:object_r:idc_file:s0
-/(vendor|system/vendor)/usr/keylayout(/.*)?              u:object_r:keylayout_file:s0
-
-# Lights
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.hannah u:object_r:hal_light_default_exec:s0
-/sys/devices/soc/leds-atc-20/leds(/.*)?                  u:object_r:sysfs_leds:s0
-
-# Radio
-/data/vendor/misc/cutback(/.*)?                          u:object_r:cutback_ipc_file:s0
-
-# Rmts
-/sys/kernel/debug/rmt_storage(/.*)?                      u:object_r:debugfs_rmt:s0
-
-# Thermal
-/dev/mmi_sys_temp                                        u:object_r:thermal_device:s0

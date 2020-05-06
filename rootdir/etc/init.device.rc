@@ -1,10 +1,6 @@
 on init
-    mkdir /oem 0550 root root
-
     # Set Hardware properties
-    setprop ro.vendor.hw.dualsim ${ro.boot.dualsim}
-    setprop ro.vendor.hw.radio ${ro.boot.radio}
-    setprop ro.hw.fps true
+    setprop ro.hardware.sensors hannah
     setprop ro.hw.imager 12MP
 
     # Variant properties
@@ -125,17 +121,30 @@ on property:ro.boot.hardware.sku=XT1924-9
     setprop ro.vendor.sensors.laccel false
     setprop ro.vendor.sensors.amd false
 
-on property:ro.vendor.hw.dualsim=true
-    setprop ro.vendor.radio.imei.sv 6
-    setprop ro.telephony.default_network 10,0
-
-on property:ro.vendor.hw.dualsim=false
-    setprop ro.vendor.radio.imei.sv 11
-    setprop ro.telephony.default_network 10
-
 on property:ro.product.name=rhannah
     setprop debug.hwui.use_buffer_age false
 
-on fs
-#    wait /dev/block/bootdevice/by-name/oem
-#    mount ext4 /dev/block/bootdevice/by-name/oem /oem ro nosuid nodev context=u:object_r:oemfs:s0
+on boot
+
+   # Change ownership and permission for laser_sensor
+   chown system system /sys/kernel/range/enable_sar
+   chmod 0660 /sys/kernel/range/enable_sar
+   chown system system /sys/kernel/range/set_delay_ms
+   chmod 0660 /sys/kernel/range/set_delay_ms
+   chown system system /sys/kernel/range/near
+   chmod 0660 /sys/kernel/range/near
+   chown system system /sys/class/input/input7/enable_ps_sensor
+   chmod 0660 /sys/class/input/input7/enable_ps_sensor
+   chown system system /sys/class/input/input7/set_delay_ms
+   chmod 0660 /sys/class/input/input7/set_delay_ms
+   chown system system /sys/class/input/input7/xtalk
+   chmod 0660 /sys/class/input/input7/xtalk
+   chown system system /sys/class/input/input7/do_flush
+   chmod 0660 /sys/class/input/input7/do_flush
+   chown system system /sys/class/input/input7/offset
+   chmod 0660 /sys/class/input/input7/offset
+
+service mmi-laser-sh /vendor/bin/init.mmi.laser.sh
+    class core
+    user root
+    oneshot

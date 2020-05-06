@@ -8,6 +8,7 @@ $(call inherit-product, device/motorola/hannah/device.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
@@ -18,7 +19,6 @@ PRODUCT_DEVICE := hannah
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto e5 plus
 PRODUCT_MANUFACTURER := motorola
-
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model \
