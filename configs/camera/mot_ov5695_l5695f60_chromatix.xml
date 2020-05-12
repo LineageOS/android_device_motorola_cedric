@@ -1,5 +1,5 @@
 <!--
-  Copyright (c) 2015 Qualcomm Technologies, Inc.
+  Copyright (c) 2016 Qualcomm Technologies, Inc.
   All Rights Reserved.
   Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
@@ -78,33 +78,33 @@ special_mode_mask values:
 
 <ChromatixConfigurationRoot>
   <CommonChromatixInfo>
-    <ChromatixName>
-      <ISPCommon>mot_s5k4h7_common</ISPCommon>
-      <PostProc>mot_s5k4h7_postproc</PostProc>
+    <ChromatixName special_mode_mask="0">
+      <ISPCommon>mot_ov5695_l5695f60_common</ISPCommon>
+      <PostProc>mot_ov5695_l5695f60_postproc</PostProc>
+      <CPPPreview>mot_ov5695_l5695f60_cpp_snapshot</CPPPreview>
+      <CPPSnapshot>mot_ov5695_l5695f60_cpp_snapshot</CPPSnapshot>
+      <CPPLiveshot>mot_ov5695_l5695f60_cpp_liveshot</CPPLiveshot>
     </ChromatixName>
   </CommonChromatixInfo>
   <ResolutionChromatixInfo>
-    <ChromatixName sensor_resolution_index="0">
-      <ISPPreview>mot_s5k4h7_snapshot</ISPPreview>
-      <ISPSnapshot>mot_s5k4h7_snapshot</ISPSnapshot>
-      <ISPVideo>mot_s5k4h7_video_full</ISPVideo>
-      <CPPVideo>mot_s5k4h7_cpp_video_full</CPPVideo>
-      <CPPPreview>mot_s5k4h7_cpp_preview</CPPPreview>
-      <CPPSnapshot>mot_s5k4h7_cpp_snapshot</CPPSnapshot>
-      <CPPLiveshot>mot_s5k4h7_cpp_liveshot</CPPLiveshot>
-      <A3Preview>mot_s5k4h7_zsl_preview_3a</A3Preview>
-      <A3Video>mot_s5k4h7_zsl_video_3a</A3Video>
+    <ChromatixName sensor_resolution_index="0" special_mode_mask="0">
+      <ISPPreview>mot_ov5695_l5695f60_snapshot</ISPPreview>
+      <ISPSnapshot>mot_ov5695_l5695f60_snapshot</ISPSnapshot>
+      <ISPVideo>mot_ov5695_l5695f60_default_video</ISPVideo>
+      <ISPLiveshot>mot_ov5695_l5695f60_snapshot</ISPLiveshot>
+      <CPPVideo>mot_ov5695_l5695f60_cpp_video</CPPVideo>
+      <A3Preview>mot_ov5695_l5695f60_snapshot_3a</A3Preview>
+      <A3Video>mot_ov5695_l5695f60_default_video_3a</A3Video>
     </ChromatixName>
-    <ChromatixName sensor_resolution_index="1">
-      <ISPPreview>mot_s5k4h7_hfr_120</ISPPreview>
-      <ISPSnapshot>mot_s5k4h7_hfr_120</ISPSnapshot>
-      <ISPVideo>mot_s5k4h7_hfr_120</ISPVideo>
-      <CPPVideo>mot_s5k4h7_cpp_hfr_120</CPPVideo>
-      <CPPPreview>mot_s5k4h7_cpp_hfr_120</CPPPreview>
-      <CPPSnapshot>mot_s5k4h7_cpp_hfr_120</CPPSnapshot>
-      <CPPLiveshot>mot_s5k4h7_cpp_hfr_120</CPPLiveshot>
-      <A3Preview>mot_s5k4h7_hfr_120_3a</A3Preview>
-      <A3Video>mot_s5k4h7_hfr_120_3a</A3Video>
+    <ChromatixName sensor_resolution_index="1" special_mode_mask="0">
+      <ISPPreview>mot_ov5695_l5695f60_hfr_120</ISPPreview>
+      <ISPSnapshot>mot_ov5695_l5695f60_hfr_120</ISPSnapshot>
+      <ISPVideo>mot_ov5695_l5695f60_hfr_120</ISPVideo>
+      <ISPLiveshot>mot_ov5695_l5695f60_hfr_120</ISPLiveshot>
+      <CPPVideo>mot_ov5695_l5695f60_cpp_hfr_120</CPPVideo>
+      <A3Preview>mot_ov5695_l5695f60_hfr_120_3a</A3Preview>
+      <A3Video>mot_ov5695_l5695f60_hfr_120_3a</A3Video>
     </ChromatixName>
   </ResolutionChromatixInfo>
 </ChromatixConfigurationRoot>
+

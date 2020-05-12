@@ -86,11 +86,11 @@ LensInfo : Information of the lens present in the module.
 <CameraConfigurationRoot>
   <CameraModuleConfig>
     <CameraId>0</CameraId>
-    <SensorName>mot_ov12a10</SensorName>
-    <EepromName>l12aa00</EepromName>
+    <SensorName>s5k3p3</SensorName>
+    <EepromName>s5k3p3</EepromName>
     <ActuatorName>dw9767</ActuatorName>
     <FlashName>pmic</FlashName>
-    <ChromatixName>ov12a10_hannah_chromatix</ChromatixName>
+    <ChromatixName>s5k3p3_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>BACK</Position>
     <MountAngle>90</MountAngle>
@@ -101,60 +101,35 @@ LensInfo : Information of the lens present in the module.
       <ComboMode>0</ComboMode>
     </CSIInfo>
     <LensInfo>
-      <FocalLength>3.88</FocalLength>
+      <FocalLength>3.59</FocalLength>
       <FNumber>2.0</FNumber>
-      <TotalFocusDistance>1.2</TotalFocusDistance>
-      <HorizontalViewAngle>66.9</HorizontalViewAngle>
-      <VerticalViewAngle>52.8</VerticalViewAngle>
-      <MinFocusDistance>0.1</MinFocusDistance>
+      <TotalFocusDistance>1.9</TotalFocusDistance>
+      <HorizontalViewAngle>64.7</HorizontalViewAngle>
+      <VerticalViewAngle>51.0</VerticalViewAngle>
+      <MinFocusDistance>0.07</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
   <CameraModuleConfig>
     <CameraId>1</CameraId>
-    <SensorName>s5k4h7</SensorName>
-    <EepromName>s5k4h7</EepromName>
-    <FlashName>pmic</FlashName>
-    <ChromatixName>mot_s5k4h7_hannah_chromatix</ChromatixName>
+    <SensorName>mot_ov5695</SensorName>
+    <EepromName>ov5695</EepromName>
+    <FlashName>wd3100</FlashName>
+    <ChromatixName>mot_ov5695_l5695f60_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>FRONT</Position>
     <MountAngle>270</MountAngle>
     <CSIInfo>
       <CSIDCore>1</CSIDCore>
-      <LaneMask>0x1F</LaneMask>
+      <LaneMask>0x07</LaneMask>
       <LaneAssign>0x4320</LaneAssign>
       <ComboMode>0</ComboMode>
     </CSIInfo>
     <LensInfo>
-      <FocalLength>2.671</FocalLength>
+      <FocalLength>2.44</FocalLength>
       <FNumber>2.2</FNumber>
-      <TotalFocusDistance>1.97</TotalFocusDistance>
-      <HorizontalViewAngle>67.9</HorizontalViewAngle>
-      <VerticalViewAngle>53.5</VerticalViewAngle>
-      <MinFocusDistance>0.1</MinFocusDistance>
-    </LensInfo>
-  </CameraModuleConfig>
-  <CameraModuleConfig>
-  <CameraId>2</CameraId>
-    <SensorName>mot_ov5675</SensorName>
-    <EepromName>ov5675</EepromName>
-    <FlashName>pmic</FlashName>
-    <ChromatixName>ov5675_jeterkc_chromatix</ChromatixName>
-    <AltChromatixName>ov5675_jeterht_chromatix</AltChromatixName>
-    <ModesSupported>1</ModesSupported>
-    <Position>FRONT</Position>
-    <MountAngle>270</MountAngle>
-    <CSIInfo>
-      <CSIDCore>1</CSIDCore>
-      <LaneMask>0x7</LaneMask>
-      <LaneAssign>0x4320</LaneAssign>
-      <ComboMode>0</ComboMode>
-    </CSIInfo>
-    <LensInfo>
-      <FocalLength>2.4</FocalLength>
-      <FNumber>2.0</FNumber>
-      <TotalFocusDistance>1.97</TotalFocusDistance>
-      <HorizontalViewAngle>62.8</HorizontalViewAngle>
-      <VerticalViewAngle>49.0</VerticalViewAngle>
+      <TotalFocusDistance>1.26</TotalFocusDistance>
+      <HorizontalViewAngle>72.95</HorizontalViewAngle>
+      <VerticalViewAngle>57.60</VerticalViewAngle>
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
