@@ -1,8 +1,7 @@
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.camera.tof.direct=1 \
-    persist.vendor.camera.HAL3.enabled=1
+    persist.camera.gyro.disable=0
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=320
+    ro.sf.lcd_density=420

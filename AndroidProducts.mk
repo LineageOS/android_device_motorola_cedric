@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_hannah.mk
+    $(LOCAL_DIR)/lineage_montana.mk

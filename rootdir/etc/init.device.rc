@@ -1,150 +1,23 @@
-on init
+on property:ro.boot.hardware.sku=*
     # Set Hardware properties
-    setprop ro.hardware.sensors hannah
-    setprop ro.hw.imager 12MP
+    setprop ro.opengles.version 196610
+    setprop ro.product.model ${ro.boot.hardware.sku}
+    setprop ro.product.name montana
+    setprop dalvik.vm.dex2oat-threads 6
+
+on init
+    setprop ro.hardware.sensors montana
+    setprop ro.hw.imager 16MP
 
     # Variant properties
-on property:ro.boot.hardware.sku=XT1924-1
-    setprop ro.opengles.version 196608
-    setprop ro.product.model XT1924-1
-    setprop ro.product.name rhannah
-    setprop dalvik.vm.dex2oat-threads 2
-    setprop persist.vendor.audio.fluence.speaker false
+on property:ro.boot.radio=APAC
     setprop ro.hw.ecompass false
-    setprop ro.mot.sensors.chopchop false
-    setprop ro.mot.sensors.camgest false
-    setprop ro.vendor.sensors.gravity false
-    setprop ro.vendor.sensors.laccel false
-    setprop ro.vendor.sensors.amd false
 
-on property:ro.boot.hardware.sku=XT1924-3
-    setprop ro.opengles.version 196610
-    setprop ro.product.model XT1924-3
-    setprop ro.product.name ahannah
-    setprop dalvik.vm.dex2oat-threads 6
-    setprop persist.vendor.audio.fluence.speaker false
+on property:ro.boot.radio=Brazil
     setprop ro.hw.ecompass false
-    setprop ro.mot.sensors.chopchop false
-    setprop ro.mot.sensors.camgest false
-    setprop ro.vendor.sensors.gravity false
-    setprop ro.vendor.sensors.laccel false
-    setprop ro.vendor.sensors.amd false
 
-on property:ro.boot.hardware.sku=XT1924-4
-    setprop ro.opengles.version 196608
-    setprop ro.product.model XT1924-4
-    setprop ro.product.name rhannah
-    setprop dalvik.vm.dex2oat-threads 2
-    setprop persist.vendor.audio.fluence.speaker false
+on property:ro.boot.radio=EMEA
     setprop ro.hw.ecompass false
-    setprop ro.mot.sensors.chopchop false
-    setprop ro.mot.sensors.camgest false
-    setprop ro.vendor.sensors.gravity false
-    setprop ro.vendor.sensors.laccel false
-    setprop ro.vendor.sensors.amd false
 
-on property:ro.boot.hardware.sku=XT1924-5
-    setprop ro.opengles.version 196608
-    setprop ro.product.model XT1924-5
-    setprop ro.product.name rhannah
-    setprop dalvik.vm.dex2oat-threads 2
-    setprop persist.vendor.audio.fluence.speaker false
-    setprop ro.hw.ecompass false
-    setprop ro.mot.sensors.chopchop false
-    setprop ro.mot.sensors.camgest false
-    setprop ro.vendor.sensors.gravity false
-    setprop ro.vendor.sensors.laccel false
-    setprop ro.vendor.sensors.amd false
-
-on property:ro.boot.hardware.sku=XT1924-6
-    setprop ro.product.model XT1924-6
-    setprop ro.opengles.version 196610
-    setprop ro.product.name hannah_t
-    setprop dalvik.vm.dex2oat-threads 6
-    setprop persist.lte.pco_supported true
-    setprop persist.vendor.audio.fluence.speaker true
-    setprop persist.radio.data_con_rprt 1
-    setprop persist.radio.customer_mbns tmo_usa_ims_default.mbn
-    setprop persist.vendor.ims.playout_delay 10
-    setprop persist.vendor.ims.cam_sensor_delay 20
-    setprop persist.vendor.ims.display_delay 40
-    setprop persist.vendor.radio.snapshot_timer 22
-    setprop persist.vendor.radio.snapshot_enabled 1
-    setprop persist.eab.supported 1
-    setprop persist.rcs.supported 1
-    setprop persist.rcs.presence.provision 0
+on property:ro.boot.radio=LATAM
     setprop ro.hw.ecompass true
-
-on property:ro.boot.hardware.sku=XT1924-7
-    setprop ro.opengles.version 196610
-    setprop ro.product.model XT1924-7
-    setprop ro.product.name hannah_t
-    setprop dalvik.vm.dex2oat-threads 6
-    setprop persist.lte.pco_supported true
-    setprop persist.vendor.audio.fluence.speaker true
-    setprop persist.radio.data_con_rprt 1
-    setprop persist.radio.customer_mbns tmo_usa_ims_default.mbn
-    setprop persist.vendor.ims.playout_delay 10
-    setprop persist.vendor.ims.cam_sensor_delay 20
-    setprop persist.vendor.ims.display_delay 40
-    setprop persist.vendor.radio.snapshot_timer 22
-    setprop persist.vendor.radio.snapshot_enabled 1
-    setprop persist.eab.supported 1
-    setprop persist.rcs.supported 1
-    setprop persist.rcs.presence.provision 0
-    setprop ro.hw.ecompass true
-
-on property:ro.boot.hardware.sku=XT1924-8
-    setprop ro.opengles.version 196610
-    setprop ro.product.model XT1924-8
-    setprop ro.product.name hannah_sprint
-    setprop dalvik.vm.dex2oat-threads 6
-    setprop persist.lte.pco_supported true
-    setprop persist.vendor.audio.fluence.speaker true
-    setprop persist.vendor.radio.snapshot_timer 22
-    setprop persist.vendor.radio.snapshot_enabled 1
-    setprop persist.eab.supported 1
-    setprop persist.rcs.supported 1
-    setprop persist.rcs.presence.provision 0
-    setprop ro.hw.ecompass true
-
-on property:ro.boot.hardware.sku=XT1924-9
-    setprop ro.opengles.version 196610
-    setprop ro.product.model XT1924-9
-    setprop ro.product.name ahannah
-    setprop dalvik.vm.dex2oat-threads 6
-    setprop persist.vendor.audio.fluence.speaker false
-    setprop ro.hw.ecompass false
-    setprop ro.mot.sensors.chopchop false
-    setprop ro.mot.sensors.camgest false
-    setprop ro.vendor.sensors.gravity false
-    setprop ro.vendor.sensors.laccel false
-    setprop ro.vendor.sensors.amd false
-
-on property:ro.product.name=rhannah
-    setprop debug.hwui.use_buffer_age false
-
-on boot
-
-   # Change ownership and permission for laser_sensor
-   chown system system /sys/kernel/range/enable_sar
-   chmod 0660 /sys/kernel/range/enable_sar
-   chown system system /sys/kernel/range/set_delay_ms
-   chmod 0660 /sys/kernel/range/set_delay_ms
-   chown system system /sys/kernel/range/near
-   chmod 0660 /sys/kernel/range/near
-   chown system system /sys/class/input/input7/enable_ps_sensor
-   chmod 0660 /sys/class/input/input7/enable_ps_sensor
-   chown system system /sys/class/input/input7/set_delay_ms
-   chmod 0660 /sys/class/input/input7/set_delay_ms
-   chown system system /sys/class/input/input7/xtalk
-   chmod 0660 /sys/class/input/input7/xtalk
-   chown system system /sys/class/input/input7/do_flush
-   chmod 0660 /sys/class/input/input7/do_flush
-   chown system system /sys/class/input/input7/offset
-   chmod 0660 /sys/class/input/input7/offset
-
-service mmi-laser-sh /vendor/bin/init.mmi.laser.sh
-    class core
-    user root
-    oneshot

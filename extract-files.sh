@@ -14,10 +14,10 @@ fi
 set -e
 
 # Required!
-export DEVICE=hannah
+export DEVICE=montana
 export DEVICE_COMMON=msm8937-common
 export VENDOR=motorola
 
-export DEVICE_BRINGUP_YEAR=2019
+export DEVICE_BRINGUP_YEAR=2018
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
