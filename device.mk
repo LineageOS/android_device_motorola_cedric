@@ -24,9 +24,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
-    $(LOCAL_PATH)/audio/audio_platform_info_ahannah.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_ahannah.xml \
-    $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
-    $(LOCAL_PATH)/audio/mixer_paths_ahannah.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_ahannah.xml
+    $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
 # Camera
 PRODUCT_COPY_FILES += \
