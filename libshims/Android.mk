@@ -15,8 +15,10 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
+LOCAL_SRC_FILES := mmcamera_ppeiscore.cpp
+LOCAL_SHARED_LIBRARIES :=  libgui_vendor libui
+LOCAL_C_INCLUDES := frameworks/native/include
 LOCAL_MODULE := libppeiscore_shim
-LOCAL_SRC_FILES := graphicbuffer.cpp
 LOCAL_MODULE_TAGS := optional
 LOCAL_VENDOR_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
