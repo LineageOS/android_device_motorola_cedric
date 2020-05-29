@@ -28,7 +28,7 @@ vendor/lib/libgralloc1.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
-vendor/lib/libjscore.so|19668b0e1640ea32b52982028005f337f041e126
+vendor/lib/libjscore.so|bffdc687f62576a35e768eb5a311ac12399a46a4
 vendor/lib/libjustshoot.so
 vendor/lib/libllvd_smore.so
 vendor/lib/libmm-disp-apis.so
@@ -55,7 +55,7 @@ vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
-vendor/lib/libmmcamera_ppeiscore.so
+vendor/lib/libmmcamera_ppeiscore.so|5b08b0d3d74a71153b5682771bc79203376210e7
 vendor/lib/libmmcamera_quadracfa.so
 vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_sw2d_lib.so
@@ -64,7 +64,7 @@ vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_trueportrait_lib.so
 vendor/lib/libmmcamera_ubifocus_lib.so
-vendor/lib/libmmcamera_vstab_module.so|d4108f74e7d5f0d6052238b2b367b49a1e7f4d4f
+vendor/lib/libmmcamera_vstab_module.so|9ec44f24d00e7c3647e0135ad355b447c1439140
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_dcrf.so
