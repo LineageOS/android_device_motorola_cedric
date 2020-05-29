@@ -17,7 +17,7 @@ vendor/lib/hw/camera.msm8937.so
 vendor/lib/libadvalgcore.so
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libcamerabgproc-jni.so
-vendor/lib/libcamerabgprocservice.so
+vendor/lib/libcamerabgprocservice.so|958452ff9fab1f6b64e46901809d3a0d6e97cb1f
 vendor/lib/libchromaflash.so
 vendor/lib/libfamily_photo.so
 vendor/lib/libflash_aw3641.so
