@@ -25,3 +25,4 @@ export DEVICE_BRINGUP_YEAR=2018
 DEVICE_BLOB_ROOT="${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"
 
 sed -i 's|/system/etc/camera|/vendor/etc/camera|g' "${DEVICE_BLOB_ROOT}/vendor/lib/libmmcamera2_sensor_modules.so"
+patchelf --remove-needed libandroid.so "${DEVICE_BLOB_ROOT}/vendor/lib/libmmcamera_vstab_module.so"
