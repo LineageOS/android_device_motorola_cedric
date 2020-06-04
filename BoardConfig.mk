@@ -32,5 +32,8 @@ VENDOR_SECURITY_PATCH := 2019-08-01
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+# Treble
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+
 # Inherit from the proprietary version
 -include vendor/motorola/montana/BoardConfigVendor.mk
