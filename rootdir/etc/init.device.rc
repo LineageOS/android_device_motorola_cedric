@@ -21,3 +21,12 @@ on property:ro.boot.radio=EMEA
 
 on property:ro.boot.radio=LATAM
     setprop ro.hw.ecompass true
+
+on boot
+    # Change permission for fingerprint sensor
+    chown system oem_5004 /sys/bus/spi/devices/spi1.0/nav
+    chown system oem_5004 /sys/bus/spi/devices/spi1.0/clk_enable
+    chown system oem_5004 /sys/bus/spi/devices/spi1.0/dev_enable
+    chown system oem_5004 /sys/bus/spi/devices/spi1.0/irq
+    chown system oem_5004 /sys/bus/spi/devices/spi1.0/irq_cnt
+    chmod 0440 /sys/bus/spi/devices/spi1.0/irq_cnt
