@@ -28,3 +28,4 @@ sed -i 's|/system/etc/camera|/vendor/etc/camera|g' "${DEVICE_BLOB_ROOT}/vendor/l
 patchelf --remove-needed libandroid.so "${DEVICE_BLOB_ROOT}/vendor/lib/libmmcamera_vstab_module.so"
 patchelf --remove-needed libcamera_client.so "${DEVICE_BLOB_ROOT}/vendor/lib/libcamerabgprocservice.so"
 sed -i "s/libgui/libwui/" "${DEVICE_BLOB_ROOT}/vendor/lib/libmmcamera_ppeiscore.so"
+patchelf --add-needed libppeiscore_shim.so "${DEVICE_BLOB_ROOT}/vendor/lib/libmmcamera_ppeiscore.so"

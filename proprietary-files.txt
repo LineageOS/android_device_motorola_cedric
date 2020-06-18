@@ -55,7 +55,7 @@ vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
-vendor/lib/libmmcamera_ppeiscore.so|5b08b0d3d74a71153b5682771bc79203376210e7
+vendor/lib/libmmcamera_ppeiscore.so|61bc1cd130ca4c9f7cd31a8d6cd4bd5e19e989d0
 vendor/lib/libmmcamera_quadracfa.so
 vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_sw2d_lib.so
