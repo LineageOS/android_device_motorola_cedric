@@ -25,9 +25,9 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.name
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="montana_retail-user 8.1.0 OPPS28.65-37-7-11 7f8a6 release-keys" \
+    PRIVATE_BUILD_DESC="montana_retail-user 8.1.0 OPPS28.65-37-7-12 073f74 release-keys" \
     PRODUCT_NAME="montana"
 
-BUILD_FINGERPRINT := motorola/montana_retail/montana:8.1.0/OPPS28.65-37-7-11/7f8a6:user/release-keys
+BUILD_FINGERPRINT := motorola/montana_retail/montana:8.1.0/OPPS28.65-37-7-12/073f74:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
