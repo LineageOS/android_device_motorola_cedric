@@ -1,12 +1,9 @@
 on property:ro.boot.hardware.sku=*
     # Set Hardware properties
-    setprop ro.opengles.version 196610
     setprop ro.product.model ${ro.boot.hardware.sku}
     setprop ro.product.name montana
-    setprop dalvik.vm.dex2oat-threads 6
 
 on init
-    setprop ro.hardware.sensors montana
     setprop ro.hw.imager 16MP
 
     # Variant properties
