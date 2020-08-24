@@ -1,0 +1,3 @@
+# TODO(b/36599434): Remove this once mm-qcamerad stops using Binder services
+typeattribute mm-qcamerad binder_in_vendor_violators;
+allow mm-qcamerad binder_device:chr_file ioctl;
