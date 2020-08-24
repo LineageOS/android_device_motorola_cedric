@@ -3,12 +3,6 @@
 RADIO=`getprop ro.boot.radio`
 
 rm -rf /system_root/system/priv-app/MotoDoze
-rm /vendor/lib/egl/libEGL_adreno_8917.so
-rm /vendor/lib/egl/libGLESv1_CM_adreno_8917.so
-rm /vendor/lib/egl/libGLESv2_adreno_8917.so
-rm /vendor/lib64/egl/libEGL_adreno_8917.so
-rm /vendor/lib64/egl/libGLESv1_CM_adreno_8917.so
-rm /vendor/lib64/egl/libGLESv2_adreno_8917.so
 if [ "$RADIO" != "APAC" ] && [ "$RADIO" != "EMEA" ]; then
     # Remove NFC-related files for RADIOs other than APAC and EMEA
     rm /vendor/etc/permissions/com.android.nfc_extras.xml
