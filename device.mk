@@ -36,9 +36,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/mot_ov5695_l5695f60_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_ov5695_l5695f60_chromatix.xml \
     $(LOCAL_PATH)/configs/camera/s5k3p3_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3p3_chromatix.xml
 
-# Dex-pre-opt exclusions
-$(call add-product-dex-preopt-module-config,MotoSignatureApp,disable)
-
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
@@ -87,10 +84,6 @@ PRODUCT_PACKAGES += \
 # Releasetools script
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/check_device.sh:install/bin/check_device.sh
-
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
 
 # Sensors
 PRODUCT_COPY_FILES += \
