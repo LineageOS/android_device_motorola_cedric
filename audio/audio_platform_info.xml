@@ -15,6 +15,8 @@
 	<device name="SND_DEVICE_OUT_SPEAKER_PROTECTED" acdb_id="14"/>
 	<device name="SND_DEVICE_OUT_SPEAKER_REVERSE" acdb_id="14"/>
 	<device name="SND_DEVICE_OUT_SPEAKER_SAFE" acdb_id="14"/>
+	<device name="SND_DEVICE_OUT_SPEAKER_EXTERNAL_1" backend="smpa" acdb_id="14"/>
+	<device name="SND_DEVICE_OUT_SPEAKER_EXTERNAL_2" backend="smpa" acdb_id="14"/>
 	<device name="SND_DEVICE_OUT_VOICE_SPEAKER_PROTECTED" acdb_id="15"/>
 	<device name="SND_DEVICE_OUT_VOICE_LINE" acdb_id="78"/>
 	<device name="SND_DEVICE_OUT_VOLTE_NB_ANC_HANDSET" acdb_id="200"/>
