@@ -34,10 +34,6 @@ vendor/lib/libmm-qcamera.so
 vendor/lib/libmm-qdcm.so
 vendor/lib/libmmcamera_cac3_lib.so
 vendor/lib/libmmcamera_ppeiscore.so|61bc1cd130ca4c9f7cd31a8d6cd4bd5e19e989d0
-vendor/lib/libmmjpeg.so
-vendor/lib/libmmjpeg_interface.so
-vendor/lib/libmmqjpeg_codec.so
-vendor/lib/libmmqjpegdma.so
 vendor/lib/libmorpho_image_stabilizer4.so
 vendor/lib/libmpbase.so
 vendor/lib/liboptizoom.so
@@ -101,6 +97,10 @@ vendor/lib/libmmcamera2_q3a_core.so|e85772683bcfaa1ac07caeb3ed3739ab411f46dd
 vendor/lib/libmmcamera2_sensor_modules.so|2fe5ddc7589b30484394eecbbd5dda3ba75f095d
 vendor/lib/libmmcamera2_stats_algorithm.so|0cdf89ceb0b492a4cc7d461646acbf601f40f6bd
 vendor/lib/libmmcamera2_stats_modules.so|15f952a853a3668602f3d38f180b3818ff518a20
+vendor/lib/libmmjpeg.so|97101fa8a7d7137011b38349eae2f5de5f63d7a1
+vendor/lib/libmmjpeg_interface.so|9da4aee269b3e5fecdefac09953f123ae046a73f
+vendor/lib/libmmqjpeg_codec.so|93fb7395e1b3490d46163cc1486022876fc4ace2
+vendor/lib/libmmqjpegdma.so|d4b449b6596b50e765819a677aeb6f876475cde9
 vendor/lib/libmotocalibration.so|d23f3bccc0bd0e670362dcb5a660a0b5ed5475f6
 
 # Camera ISP - from deen_sprout - QPKS30.54-22-10
