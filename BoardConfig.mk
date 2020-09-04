@@ -15,10 +15,6 @@ DEVICE_PATH := device/motorola/montana
 # Assert
 TARGET_OTA_ASSERT_DEVICE := montana
 
-# Camera
-TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
-    /vendor/bin/mm-qcamera-daemon=27
-
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
