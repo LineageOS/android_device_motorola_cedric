@@ -25,6 +25,5 @@ export DEVICE_BRINGUP_YEAR=2018
 DEVICE_BLOB_ROOT="${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"
 
 sed -i 's|msm8953_mot_deen_camera.xml|msm8937_mot_montana_cam.xml|g' "${DEVICE_BLOB_ROOT}/vendor/lib/libmmcamera2_sensor_modules.so"
-patchelf --remove-needed libcamera_client.so "${DEVICE_BLOB_ROOT}/vendor/lib/libcamerabgprocservice.so"
 sed -i "s/libgui/libwui/" "${DEVICE_BLOB_ROOT}/vendor/lib/libmmcamera_ppeiscore.so"
 patchelf --add-needed libppeiscore_shim.so "${DEVICE_BLOB_ROOT}/vendor/lib/libmmcamera_ppeiscore.so"
