@@ -27,3 +27,14 @@ on boot
     chown system oem_5004 /sys/bus/spi/devices/spi1.0/irq
     chown system oem_5004 /sys/bus/spi/devices/spi1.0/irq_cnt
     chmod 0440 /sys/bus/spi/devices/spi1.0/irq_cnt
+
+service vendor.sensors.qti /vendor/bin/sensors.qti
+    class core
+    user system
+    group system
+    disabled
+
+service sensor-sh /vendor/bin/init.qcom.sensors.sh
+    class core
+    user root
+    oneshot
