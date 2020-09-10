@@ -163,6 +163,10 @@ vendor/lib/libmmcamera_s5k3p3_eeprom.so|d4c47ebfd3a42ff5279f22eef3484f9616133d5f
 vendor/lib/libmmcamera_mot_ov5695.so
 vendor/lib/libmmcamera_s5k3p3.so
 
+# Display calibration
+vendor/etc/qdcm_calib_data_mipi_mot_vid_inx_1080p_521.xml
+vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_521.xml
+
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|7574aa1db5fc0a8343cdd8910e62994d650fbe59
