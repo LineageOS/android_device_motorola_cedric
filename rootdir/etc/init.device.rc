@@ -1,7 +1,7 @@
 on property:ro.boot.hardware.sku=*
     # Set Hardware properties
     setprop ro.product.model ${ro.boot.hardware.sku}
-    setprop ro.product.name montana
+    setprop ro.product.name cedric
 
 on init
     setprop ro.hw.imager 16MP

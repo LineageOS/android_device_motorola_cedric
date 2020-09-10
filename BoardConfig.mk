@@ -10,10 +10,10 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 # Inherit from msm8937-common
 -include device/motorola/msm8937-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/motorola/montana
+DEVICE_PATH := device/motorola/cedric
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := montana
+TARGET_OTA_ASSERT_DEVICE := cedric
 
 # Display
 TARGET_SCREEN_DENSITY := 420
@@ -22,7 +22,7 @@ TARGET_SCREEN_DENSITY := 420
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := montana_defconfig
+TARGET_KERNEL_CONFIG := cedric_defconfig
 
 # NFC
 NXP_CHIP_TYPE := pn554
@@ -38,4 +38,4 @@ VENDOR_SECURITY_PATCH := 2019-08-01
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Inherit from the proprietary version
--include vendor/motorola/montana/BoardConfigVendor.mk
+-include vendor/motorola/cedric/BoardConfigVendor.mk

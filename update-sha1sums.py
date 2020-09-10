@@ -20,7 +20,7 @@ import os
 import sys
 from hashlib import sha1
 
-device = 'montana'
+device = 'cedric'
 vendor = 'motorola'
 
 with open('proprietary-files.txt', 'r') as f:

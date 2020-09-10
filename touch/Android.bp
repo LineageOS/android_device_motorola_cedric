@@ -13,8 +13,8 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.touch@1.0-service.montana",
-    init_rc: ["vendor.lineage.touch@1.0-service.montana.rc"],
+    name: "vendor.lineage.touch@1.0-service.cedric",
+    init_rc: ["vendor.lineage.touch@1.0-service.cedric.rc"],
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     vendor: true,

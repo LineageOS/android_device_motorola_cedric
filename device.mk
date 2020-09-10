@@ -8,7 +8,7 @@
 $(call inherit-product, device/motorola/msm8937-common/msm8937.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/motorola/montana/montana-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/cedric/cedric-vendor.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
@@ -81,9 +81,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.device.rc
 
-PRODUCT_PACKAGES += \
-    init.qcom.sensors.sh
-
 # Releasetools script
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/check_device.sh:install/bin/check_device.sh
@@ -98,4 +95,4 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.montana
+    vendor.lineage.touch@1.0-service.cedric

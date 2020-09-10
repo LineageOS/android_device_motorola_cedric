@@ -1,24 +1,26 @@
 Copyright (C) 2019 The LineageOS Project
 
-Device configuration for Moto G5S (montana)
+Device configuration for Moto G5 (cedric)
 ==================================================
 
-The Motorola Moto G5S (codenamed _"montana"_) is a low-mid range smartphone from Motorola mobility.
+The Motorola Moto G5 (codenamed _"cedric"_) is a mid-range smartphone from Motorola mobility.
 
 ## Device specifications
 
-| Basic   | Spec Sheet
-| -------:|:-------------------------
-| SoC     | Qualcomm MSM8937 Snapdragon 430
-| CPU     | Octa-core (4x1.4 GHz Cortex-A53 & 4x 1.1 GHz Cortex-A53)
-| GPU     | Adreno 505
-| Memory  | 2-4 GB RAM
-| Shipped Android version | 7.1
-| Storage | 32 GB
-| Battery | Non-removable Li-Ion 3000 mAh
-| Display | 1080 x 1920 pixels, 16:9 ratio, 5.2 inches, IPS LCD (~424 ppi density)
-| Camera  | 16 MP, LED flash
+Basic   | Spec Sheet
+-------:|:-------------------------
+CPU     | Octa-core 1.4 GHz Cortex-A53
+Chipset | Qualcomm MSM8937 Snapdragon 430
+GPU     | Adreno 505
+Memory  | 2/3 GB RAM
+Shipped Android Version | 7.0
+Storage | 16/32 GB
+MicroSD | Up to 128 GB
+Battery | Li-Ion 2800mAh battery
+Display | 1920 x 1080 pixels, 5.0 inches (~441 ppi pixel density)
+Camera  | 13 MP, f/2.0, phase detection autofocus, LED flash
+Front Camera  |  5 MP, f/2.2
 
 ## Device picture
 
-![Motorola Moto G5S](https://cdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g5s-2.jpg "Moto G5S")
+![Motorola Moto G5](http://cdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g5-1.jpg "Moto G5")

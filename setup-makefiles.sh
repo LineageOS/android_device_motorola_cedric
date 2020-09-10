@@ -8,7 +8,7 @@
 set -e
 
 # Required!
-export DEVICE=montana
+export DEVICE=cedric
 export DEVICE_COMMON=msm8937-common
 export VENDOR=motorola
 
