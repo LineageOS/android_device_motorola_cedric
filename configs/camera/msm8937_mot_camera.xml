@@ -86,11 +86,11 @@ LensInfo : Information of the lens present in the module.
 <CameraConfigurationRoot>
   <CameraModuleConfig>
     <CameraId>0</CameraId>
-    <SensorName>s5k3p3</SensorName>
-    <EepromName>s5k3p3</EepromName>
+    <SensorName>mot_imx258</SensorName>
     <ActuatorName>dw9767</ActuatorName>
+    <EepromName>dw9767</EepromName>
     <FlashName>pmic</FlashName>
-    <ChromatixName>s5k3p3_chromatix</ChromatixName>
+    <ChromatixName>mot_imx258_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>BACK</Position>
     <MountAngle>90</MountAngle>
@@ -104,8 +104,8 @@ LensInfo : Information of the lens present in the module.
       <FocalLength>3.59</FocalLength>
       <FNumber>2.0</FNumber>
       <TotalFocusDistance>1.9</TotalFocusDistance>
-      <HorizontalViewAngle>64.7</HorizontalViewAngle>
-      <VerticalViewAngle>51.0</VerticalViewAngle>
+      <HorizontalViewAngle>65.9</HorizontalViewAngle>
+      <VerticalViewAngle>51.5</VerticalViewAngle>
       <MinFocusDistance>0.07</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
@@ -113,8 +113,7 @@ LensInfo : Information of the lens present in the module.
     <CameraId>1</CameraId>
     <SensorName>mot_ov5695</SensorName>
     <EepromName>ov5695</EepromName>
-    <FlashName>wd3100</FlashName>
-    <ChromatixName>mot_ov5695_l5695f60_chromatix</ChromatixName>
+    <ChromatixName>mot_ov5695_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>FRONT</Position>
     <MountAngle>270</MountAngle>

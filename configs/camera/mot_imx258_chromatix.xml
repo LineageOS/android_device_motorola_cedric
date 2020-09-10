@@ -1,5 +1,5 @@
 <!--
-  Copyright (c) 2016 Qualcomm Technologies, Inc.
+  Copyright (c) 2015 Qualcomm Technologies, Inc.
   All Rights Reserved.
   Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
@@ -78,37 +78,35 @@ special_mode_mask values:
 
 <ChromatixConfigurationRoot>
   <CommonChromatixInfo>
-    <ChromatixName special_mode_mask="0">
-      <ISPCommon>s5k3p3_common</ISPCommon>
-      <PostProc>s5k3p3_postproc</PostProc>
+    <ChromatixName>
+      <ISPCommon>mot_imx258_common</ISPCommon>
+      <PostProc>mot_imx258_postproc</PostProc>
+      <CPPPreview>mot_imx258_cpp_preview</CPPPreview>
+      <CPPSnapshot>mot_imx258_cpp_snapshot</CPPSnapshot>
+      <CPPLiveshot>mot_imx258_cpp_liveshot</CPPLiveshot>
     </ChromatixName>
     <ChromatixName special_mode_mask="MOT_ALTM_IHDR_VIDEO">
-      <ISPVideo>s5k3p3_ihdr_video</ISPVideo>
-      <A3Video>s5k3p3_ihdr_video_3a</A3Video>
+      <ISPVideo>mot_imx258_ihdr_video</ISPVideo>
+      <A3Video>mot_imx258_ihdr_video_3a</A3Video>
     </ChromatixName>
   </CommonChromatixInfo>
   <ResolutionChromatixInfo>
-    <ChromatixName sensor_resolution_index="0" special_mode_mask="0">
-      <ISPPreview>s5k3p3_snapshot</ISPPreview>
-      <ISPSnapshot>s5k3p3_snapshot</ISPSnapshot>
-      <ISPVideo>s5k3p3_snapshot</ISPVideo>
-      <CPPPreview>s5k3p3_cpp_preview</CPPPreview>
-      <CPPSnapshot>s5k3p3_cpp_snapshot</CPPSnapshot>
-      <CPPVideo>s5k3p3_cpp_video</CPPVideo>
-      <CPPLiveshot>s5k3p3_cpp_liveshot</CPPLiveshot>
-      <A3Preview>s5k3p3_zsl_preview_3a</A3Preview>
-      <A3Video>s5k3p3_zsl_video_3a</A3Video>
+    <ChromatixName sensor_resolution_index="0">
+      <ISPPreview>mot_imx258_snapshot</ISPPreview>
+      <ISPSnapshot>mot_imx258_snapshot</ISPSnapshot>
+      <ISPVideo>mot_imx258_default_video</ISPVideo>
+      <CPPVideo>mot_imx258_cpp_video</CPPVideo>
+      <A3Preview>mot_imx258_zsl_preview_3a</A3Preview>
+      <A3Video>mot_imx258_zsl_video_3a</A3Video>
     </ChromatixName>
-    <ChromatixName sensor_resolution_index="1" special_mode_mask="0">
-      <ISPPreview>s5k3p3_hfr_120</ISPPreview>
-      <ISPSnapshot>s5k3p3_hfr_120</ISPSnapshot>
-      <ISPVideo>s5k3p3_hfr_120</ISPVideo>
-      <CPPPreview>s5k3p3_cpp_hfr_120</CPPPreview>
-      <CPPSnapshot>s5k3p3_cpp_hfr_120</CPPSnapshot>
-      <CPPVideo>s5k3p3_cpp_hfr_120</CPPVideo>
-      <CPPLiveshot>s5k3p3_cpp_hfr_120</CPPLiveshot>
-      <A3Preview>s5k3p3_hfr_120_3a</A3Preview>
-      <A3Video>s5k3p3_hfr_120_3a</A3Video>
+    <ChromatixName sensor_resolution_index="1">
+      <ISPPreview>mot_imx258_hfr_120</ISPPreview>
+      <ISPSnapshot>mot_imx258_hfr_120</ISPSnapshot>
+      <ISPVideo>mot_imx258_hfr_120</ISPVideo>
+      <CPPVideo>mot_imx258_cpp_hfr_120</CPPVideo>
+      <A3Preview>mot_imx258_hfr_120_3a</A3Preview>
+      <A3Video>mot_imx258_hfr_120_3a</A3Video>
     </ChromatixName>
   </ResolutionChromatixInfo>
 </ChromatixConfigurationRoot>
+
