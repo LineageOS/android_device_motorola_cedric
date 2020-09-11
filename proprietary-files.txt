@@ -69,8 +69,8 @@ vendor/lib/libmmcamera_mot_imx258_mono.so
 vendor/lib/libmmcamera_mot_ov5695.so
 
 # Display calibration
-vendor/etc/qdcm_calib_data_mipi_mot_vid_inx_1080p_497.xml|d1ab1e549454fccb43a9bcd5ef9bc7e49f2ab3ad
-vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_497.xml|5ccb7cd0956ba23c458222476841f33fc51d385f
+vendor/etc/qdcm_calib_data_mipi_mot_vid_inx_1080p_497.xml|b844a8f25dbc79ab45891c895ed8e843ecefbe1c
+vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_497.xml|d3552074a939397c7273bf50abd4c3dfcae013fe
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice|7401a5d8a7872064a01611b760f67665dfe2d398
