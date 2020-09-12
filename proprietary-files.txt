@@ -11,14 +11,13 @@ etc/acdbdata/Speaker_cal.acdb:vendor/etc/acdbdata/Speaker_cal.acdb
 lib/libmot_lux_standardization.so:vendor/lib/libmot_lux_standardization.so
 lib/lib_mot_app6_metadata.so:vendor/lib/lib_mot_app6_metadata.so
 vendor/lib/libchromaflash.so
-vendor/lib/libflash_wd3100.so
 vendor/lib/libgralloc1.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libllvd_smore.so
 vendor/lib/libmmcamera_cac3_lib.so
-vendor/lib/libmmcamera_ppeiscore.so|61bc1cd130ca4c9f7cd31a8d6cd4bd5e19e989d0
+vendor/lib/libmmcamera_ppeiscore.so|6472f5d95051544eb26fd2eae8becd5e4d47e847
 vendor/lib/liboptizoom.so
 vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegenc.so
@@ -76,7 +75,7 @@ vendor/lib/libmmcamera2_mct_shimlayer.so|8a22d7123e1b2d7f45a86aac5a6ceee8217c4c8
 vendor/lib/libmmcamera2_pp_buf_mgr.so|76bfbc64b64b03a3814279269b1541abb8f74030
 vendor/lib/libmmcamera2_pproc_modules.so|8f553b9a67db01234e7cb2e32554a5a599441034
 vendor/lib/libmmcamera2_q3a_core.so|e85772683bcfaa1ac07caeb3ed3739ab411f46dd
-vendor/lib/libmmcamera2_sensor_modules.so|2fe5ddc7589b30484394eecbbd5dda3ba75f095d
+vendor/lib/libmmcamera2_sensor_modules.so|5ae008cf3d1ac6e7e9fa647f494b01fed8909acf
 vendor/lib/libmmcamera2_stats_algorithm.so|0cdf89ceb0b492a4cc7d461646acbf601f40f6bd
 vendor/lib/libmmcamera2_stats_modules.so|15f952a853a3668602f3d38f180b3818ff518a20
 vendor/lib/libmmjpeg.so|97101fa8a7d7137011b38349eae2f5de5f63d7a1
@@ -125,47 +124,47 @@ vendor/lib/libmmcamera_isp_wb40.so|db4f11f489a7b17c54730e3b96754a3356da7d43
 vendor/lib/libactuator_dw9767_truly.so|c8665ac9b01ab5e177a74a1064f3c313b5090e50
 
 # Camera chromatix
-vendor/lib/libchromatix_mot_ov5695_l5695f60_common.so
-vendor/lib/libchromatix_mot_ov5695_l5695f60_cpp_hfr_120.so
-vendor/lib/libchromatix_mot_ov5695_l5695f60_cpp_liveshot.so
-vendor/lib/libchromatix_mot_ov5695_l5695f60_cpp_snapshot.so
-vendor/lib/libchromatix_mot_ov5695_l5695f60_cpp_video.so
-vendor/lib/libchromatix_mot_ov5695_l5695f60_default_video.so
-vendor/lib/libchromatix_mot_ov5695_l5695f60_default_video_3a.so
-vendor/lib/libchromatix_mot_ov5695_l5695f60_hfr_120.so
-vendor/lib/libchromatix_mot_ov5695_l5695f60_hfr_120_3a.so
-vendor/lib/libchromatix_mot_ov5695_l5695f60_postproc.so
-vendor/lib/libchromatix_mot_ov5695_l5695f60_snapshot.so
-vendor/lib/libchromatix_mot_ov5695_l5695f60_snapshot_3a.so
-vendor/lib/libchromatix_s5k3p3_common.so
-vendor/lib/libchromatix_s5k3p3_cpp_hfr_120.so
-vendor/lib/libchromatix_s5k3p3_cpp_liveshot.so
-vendor/lib/libchromatix_s5k3p3_cpp_preview.so
-vendor/lib/libchromatix_s5k3p3_cpp_snapshot.so
-vendor/lib/libchromatix_s5k3p3_cpp_video.so
-vendor/lib/libchromatix_s5k3p3_hfr_120.so
-vendor/lib/libchromatix_s5k3p3_hfr_120_3a.so
-vendor/lib/libchromatix_s5k3p3_ihdr_video.so
-vendor/lib/libchromatix_s5k3p3_ihdr_video_3a.so
-vendor/lib/libchromatix_s5k3p3_postproc.so
-vendor/lib/libchromatix_s5k3p3_snapshot.so
-vendor/lib/libchromatix_s5k3p3_zsl_preview_3a.so
-vendor/lib/libchromatix_s5k3p3_zsl_video_3a.so
-
-# Camera eeprom
-vendor/lib/libmmcamera_dw9767_eeprom.so
+vendor/lib/libchromatix_mot_imx258_common.so
+vendor/lib/libchromatix_mot_imx258_cpp_hfr_120.so
+vendor/lib/libchromatix_mot_imx258_cpp_liveshot.so
+vendor/lib/libchromatix_mot_imx258_cpp_preview.so
+vendor/lib/libchromatix_mot_imx258_cpp_snapshot.so
+vendor/lib/libchromatix_mot_imx258_cpp_video.so
+vendor/lib/libchromatix_mot_imx258_default_video.so
+vendor/lib/libchromatix_mot_imx258_hfr_120.so
+vendor/lib/libchromatix_mot_imx258_hfr_120_3a.so
+vendor/lib/libchromatix_mot_imx258_ihdr_video.so
+vendor/lib/libchromatix_mot_imx258_ihdr_video_3a.so
+vendor/lib/libchromatix_mot_imx258_postproc.so
+vendor/lib/libchromatix_mot_imx258_snapshot.so
+vendor/lib/libchromatix_mot_imx258_zsl_preview_3a.so
+vendor/lib/libchromatix_mot_imx258_zsl_video_3a.so
+vendor/lib/libchromatix_mot_ov5695_common.so
+vendor/lib/libchromatix_mot_ov5695_cpp_hfr_120.so
+vendor/lib/libchromatix_mot_ov5695_cpp_liveshot.so
+vendor/lib/libchromatix_mot_ov5695_cpp_snapshot.so
+vendor/lib/libchromatix_mot_ov5695_cpp_video.so
+vendor/lib/libchromatix_mot_ov5695_default_video.so
+vendor/lib/libchromatix_mot_ov5695_default_video_3a.so
+vendor/lib/libchromatix_mot_ov5695_hfr_120.so
+vendor/lib/libchromatix_mot_ov5695_hfr_120_3a.so
+vendor/lib/libchromatix_mot_ov5695_postproc.so
+vendor/lib/libchromatix_mot_ov5695_snapshot.so
+vendor/lib/libchromatix_mot_ov5695_snapshot_3a.so
 
 # Camera eeprom - from deen_sprout - PPKS29.68-16-36-14
+vendor/lib/libmmcamera_dw9767_eeprom.so|b40895aff4b22ad16814b9de9147a49408f92c74
 vendor/lib/libmmcamera_ov5695_eeprom.so|e3c068b0c7e5b288cfad3ad421b6b5760057763d
-vendor/lib/libmmcamera_s5k3p3_eeprom.so|d4c47ebfd3a42ff5279f22eef3484f9616133d5f
 
 # Camera sensors
+vendor/lib/libmmcamera_mot_imx258.so
+vendor/lib/libmmcamera_mot_imx258_bear.so
+vendor/lib/libmmcamera_mot_imx258_mono.so
 vendor/lib/libmmcamera_mot_ov5695.so
-vendor/lib/libmmcamera_s5k3p3.so
 
 # Display calibration
-vendor/etc/qdcm_calib_data_mipi_mot_vid_inx_1080p_521.xml
-vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_521.xml
+vendor/etc/qdcm_calib_data_mipi_mot_vid_inx_1080p_497.xml
+vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_497.xml
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice
@@ -173,34 +172,8 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|7574aa1db
 vendor/framework/com.fingerprints.extension.jar
 vendor/lib/com.fingerprints.extension@1.0_vendor.so
 
-# NFC
-vendor/firmware/libpn548ad_fw.so:vendor/lib/libpn548ad_fw.so
-
-# Opalum firmware
-etc/firmware/opalum.rx.ext.config.0:vendor/firmware/opalum.rx.ext.config.0
-etc/firmware/opalum.rx.ext.config.1:vendor/firmware/opalum.rx.ext.config.1
-etc/firmware/opalum.rx.ext.config.2:vendor/firmware/opalum.rx.ext.config.2
-etc/firmware/opalum.rx.ext.config.3:vendor/firmware/opalum.rx.ext.config.3
-etc/firmware/opalum.tx.ext.config.0:vendor/firmware/opalum.tx.ext.config.0
-etc/firmware/opalum.tx.ext.config.1:vendor/firmware/opalum.tx.ext.config.1
-etc/firmware/opalum.tx.ext.config.2:vendor/firmware/opalum.tx.ext.config.2
-etc/firmware/opalum.tx.ext.config.3:vendor/firmware/opalum.tx.ext.config.3
-
-# Sensors - from deen_sprout - QPKS30.54-22-11
-vendor/bin/sensors.qti|5f43a818c4c682956bed031b4fc9583d42b7f70a
-vendor/lib/libsensor1.so|637aa4ec588533a3dcddb6ed95a7434f1f6b7d59
-vendor/lib/libsensor_reg.so|f81737c08759acc8add3ce87160f1ae24263546d
-vendor/lib/sensor_calibrate.so|53353469aa930cd298d6ff4a1981cc7cebb03d5e
-vendor/lib/sensors.rp.so|e35005a9a8e0aa574bb116490ff0240eb8b9a094
-vendor/lib/sensors.ssc.so|e69b474fd6e94e93b6684935455cc6c9ef5c2192
-vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so|82fae4500ad96d42ef48f9c0c9d00368c34480c5
-vendor/lib64/libsensor1.so|74faeeb9d8679fa1260bbc0cd7aa32cc859204cd
-vendor/lib64/libsensor_reg.so|fc6d0f4021f01ba0d0c2406e7a58dd1af4d21b19
-vendor/lib64/sensor_calibrate.so|47f475a83d6eb59f45a810299116893c91acf79e
-vendor/lib64/sensors.rp.so|c792a29071b6e8521e205b0d0e87a96401407618
-vendor/lib64/sensors.ssc.so|761d2b907b60176a8ef77e7f9296337b936a5351
-vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|4ca1d6dbe9acfbc762234b622ab2e7fa3328275d
+# Sensors
+vendor/etc/firmware/sensorhubfw.bin:vendor/firmware/sensorhubfw.bin
 
 # Touchscreen firmware
-etc/firmware/synaptics-inx-s3603r-17042001-27111d-montana.tdat:vendor/firmware/synaptics-inx-s3603r-17042001-27111d-montana.tdat
-etc/firmware/synaptics-tianma-s3603r-17041102-27111d-montana.tdat:vendor/firmware/synaptics-tianma-s3603r-17041102-27111d-montana.tdat
+vendor/firmware/synaptics-tianma-s3203b-16120901-25d862-cedric.tdat
