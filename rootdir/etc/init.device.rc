@@ -4,37 +4,44 @@ on property:ro.boot.hardware.sku=*
     setprop ro.product.name cedric
 
 on init
-    setprop ro.hw.imager 16MP
+    setprop ro.hw.imager 13MP
 
-    # Variant properties
-on property:ro.boot.radio=APAC
-    setprop ro.hw.ecompass false
+on early-boot
+    # STML0 driver parameter permissions
+    chown root oem_5004 /sys/module/stml0xx/parameters/irq_disable
+    chmod 0660 /sys/module/stml0xx/parameters/irq_disable
 
-on property:ro.boot.radio=Brazil
-    setprop ro.hw.ecompass false
-
-on property:ro.boot.radio=EMEA
-    setprop ro.hw.ecompass false
-
-on property:ro.boot.radio=LATAM
-    setprop ro.hw.ecompass true
+    #STML0 device permissions
+    chown system compass /dev/stml0xx
+    chmod 0660 /dev/stml0xx
+    chown system compass /dev/stml0xx_as
+    chmod 0660 /dev/stml0xx_as
+    chown system compass /dev/stml0xx_ms
+    chmod 0660 /dev/stml0xx_ms
 
 on boot
     # Change permission for fingerprint sensor
-    chown system oem_5004 /sys/bus/spi/devices/spi1.0/nav
-    chown system oem_5004 /sys/bus/spi/devices/spi1.0/clk_enable
-    chown system oem_5004 /sys/bus/spi/devices/spi1.0/dev_enable
-    chown system oem_5004 /sys/bus/spi/devices/spi1.0/irq
-    chown system oem_5004 /sys/bus/spi/devices/spi1.0/irq_cnt
-    chmod 0440 /sys/bus/spi/devices/spi1.0/irq_cnt
+    chown system oem_5004 /sys/bus/spi/devices/spi6.0/nav
+    chown system oem_5004 /sys/bus/spi/devices/spi6.0/clk_enable
+    chown system oem_5004 /sys/bus/spi/devices/spi6.0/dev_enable
+    chown system oem_5004 /sys/bus/spi/devices/spi6.0/irq
+    chown system oem_5004 /sys/bus/spi/devices/spi6.0/irq_cnt
+    chmod 0440 /sys/bus/spi/devices/spi6.0/irq_cnt
 
-service vendor.sensors.qti /vendor/bin/sensors.qti
-    class core
-    user system
-    group system
-    disabled
+   # Change permission for type C params
+   chown root oem_5004 /sys/devices/soc/78b6000.i2c/i2c-2/2-0022/CC_state
+   chown root oem_5004 /sys/devices/soc/78b6000.i2c/i2c-2/2-0022/enable_vconn
 
-service sensor-sh /vendor/bin/init.qcom.sensors.sh
-    class core
-    user root
+on post-fs-data
+    # Sensor Hub calibration data directory
+    mkdir /data/misc/sensorhub 0770 system compass
+
+    # Setup folder for native to transfer data to NativeDropBoxAgent
+    mkdir /data/system/dropbox-add 0730 system diag
+
+# Start Sensor daemon
+service motosh /vendor/bin/motosh boot
+    class late_start
+    user compass
+    group compass misc input
     oneshot
