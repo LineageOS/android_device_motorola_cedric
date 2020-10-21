@@ -88,7 +88,6 @@ LensInfo : Information of the lens present in the module.
     <CameraId>0</CameraId>
     <SensorName>mot_imx258</SensorName>
     <ActuatorName>dw9767</ActuatorName>
-    <EepromName>dw9767</EepromName>
     <FlashName>pmic</FlashName>
     <ChromatixName>mot_imx258_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
@@ -112,7 +111,6 @@ LensInfo : Information of the lens present in the module.
   <CameraModuleConfig>
     <CameraId>1</CameraId>
     <SensorName>mot_ov5695</SensorName>
-    <EepromName>ov5695</EepromName>
     <ChromatixName>mot_ov5695_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>FRONT</Position>
