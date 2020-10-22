@@ -1,11 +1,3 @@
-on property:ro.boot.hardware.sku=*
-    # Set Hardware properties
-    setprop ro.product.model ${ro.boot.hardware.sku}
-    setprop ro.product.name cedric
-
-on init
-    setprop ro.hw.imager 13MP
-
 on early-boot
     # STML0 driver parameter permissions
     chown root oem_5004 /sys/module/stml0xx/parameters/irq_disable
@@ -28,9 +20,9 @@ on boot
     chown system oem_5004 /sys/bus/spi/devices/spi6.0/irq_cnt
     chmod 0440 /sys/bus/spi/devices/spi6.0/irq_cnt
 
-   # Change permission for type C params
-   chown root oem_5004 /sys/devices/soc/78b6000.i2c/i2c-2/2-0022/CC_state
-   chown root oem_5004 /sys/devices/soc/78b6000.i2c/i2c-2/2-0022/enable_vconn
+    # Change permission for type C params
+    chown root oem_5004 /sys/devices/soc/78b6000.i2c/i2c-2/2-0022/CC_state
+    chown root oem_5004 /sys/devices/soc/78b6000.i2c/i2c-2/2-0022/enable_vconn
 
 on post-fs-data
     # Sensor Hub calibration data directory
@@ -40,7 +32,7 @@ on post-fs-data
     mkdir /data/vendor/sensorhub_logs 0730 system diag
 
 # Start Sensor daemon
-service motosh /vendor/bin/motosh boot
+service vendor.motosh /vendor/bin/motosh boot
     class late_start
     user compass
     group compass misc input
