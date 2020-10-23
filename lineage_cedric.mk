@@ -17,17 +17,13 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_cedric
 PRODUCT_DEVICE := cedric
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := moto g5
+PRODUCT_MODEL := Moto G (5)
 PRODUCT_MANUFACTURER := motorola
 
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
-    ro.product.model \
-    ro.product.name
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="cedric-user 8.1.0 OPPS28.85-13-2 d04a4 release-keys" \
-    PRODUCT_NAME="cedric"
+    PRIVATE_BUILD_DESC="cedric_retail-user 8.1.0 OPP28.85-19-4-2 3447de release-keys" \
+    PRODUCT_NAME="cedric_retail"
 
-BUILD_FINGERPRINT := motorola/cedric/cedric:8.1.0/OPPS28.85-13-2/d04a4:user/release-keys
+BUILD_FINGERPRINT := motorola/cedric_retail/cedric:8.1.0/OPP28.85-19-4-2/3447de:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
