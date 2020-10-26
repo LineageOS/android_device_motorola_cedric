@@ -5,6 +5,11 @@
 
 # Sensors
 /(vendor|system/vendor)/bin/motosh                       u:object_r:sensor_hub_exec:s0
+/data/vendor/sensorhub(/.*)?                             u:object_r:sensorhub_data_file:s0
+/data/vendor/sensorhub_logs(/.*)?                        u:object_r:sensorhub_data_file:s0
+/dev/stml0xx                                             u:object_r:sensors_device:s0
+/dev/stml0xx_as                                          u:object_r:sensors_device:s0
+/dev/stml0xx_ms                                          u:object_r:sensors_device:s0
 
 # Touch
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.cedric u:object_r:hal_lineage_touch_default_exec:s0
