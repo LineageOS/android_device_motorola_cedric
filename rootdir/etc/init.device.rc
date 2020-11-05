@@ -36,6 +36,8 @@ on boot
     chown root oem_5004 /sys/devices/soc/78b6000.i2c/i2c-2/2-0022/enable_vconn
 
 on post-fs-data
+    mkdir /data/.fps 0770 system system
+
     # Sensor Hub calibration data directory
     mkdir /data/vendor/sensorhub 0770 system compass
 
@@ -48,3 +50,4 @@ service vendor.motosh /vendor/bin/motosh boot
     user compass
     group compass misc input
     oneshot
+
