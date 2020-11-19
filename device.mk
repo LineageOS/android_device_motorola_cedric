@@ -64,10 +64,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    libsensorhub \
     motosh \
-    sensorhub.msm8937 \
-    sensors.msm8937 \
     sensors.rp
 
 PRODUCT_COPY_FILES += \
