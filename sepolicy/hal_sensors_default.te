@@ -1,3 +1,4 @@
 allow hal_sensors_default sensorhub_data_file:dir create_dir_perms;
 allow hal_sensors_default sensorhub_data_file:file create_file_perms;
 allow hal_sensors_default sensors_device:chr_file rw_file_perms;
+get_prop(hal_sensors_default, compass_prop)
