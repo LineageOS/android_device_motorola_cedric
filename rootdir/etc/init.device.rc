@@ -1,7 +1,7 @@
-on property:ro.boot.hardware.sku=XT1672
+on init && property:ro.boot.hardware.sku=XT1672
     setprop ro.vendor.hw.ecompass true
 
-on property:ro.boot.hardware.sku=XT1675
+on init && property:ro.boot.hardware.sku=XT1675
     setprop ro.vendor.hw.ecompass true
 
 on early-boot

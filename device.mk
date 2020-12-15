@@ -58,10 +58,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.device.rc
 
-# Releasetools script
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/check_device.sh:install/bin/check_device.sh
-
 # Sensors
 PRODUCT_PACKAGES += \
     motosh
@@ -72,8 +68,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Thermal
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    $(LOCAL_PATH)/configs/thermal-engine-India.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-India.conf
+    $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
 # Touch
 PRODUCT_PACKAGES += \
