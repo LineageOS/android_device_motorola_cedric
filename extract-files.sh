@@ -1,6 +1,7 @@
 #!/bin/bash
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017-2020 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -13,16 +14,13 @@ fi
 
 set -e
 
-# Required!
+export BOARD_COMMON=msm8937-common
 export DEVICE=cedric
-export DEVICE_COMMON=msm8937-common
 export VENDOR=motorola
 
-export DEVICE_BRINGUP_YEAR=2018
+"./../../${VENDOR}/${BOARD_COMMON}/extract-files.sh" "$@"
 
-"./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
-
-DEVICE_BLOB_ROOT="${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"
+DEVICE_BLOB_ROOT="../../../vendor/${VENDOR}/${DEVICE}/proprietary"
 
 sed -i 's|/firmware/image|/vendor/f/image|' "${DEVICE_BLOB_ROOT}/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice"
 patchelf --remove-needed android.hidl.base@1.0.so "${DEVICE_BLOB_ROOT}/vendor/lib/com.fingerprints.extension@1.0_vendor.so"
