@@ -8,7 +8,7 @@
 $(call inherit-product, device/motorola/msm8937-common/msm8937.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/motorola/cedric/cedric-vendor.mk)
+$(call inherit-product, vendor/motorola/cedric/cedric-vendor.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920

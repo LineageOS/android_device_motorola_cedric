@@ -51,4 +51,4 @@ MOT_SENSOR_HUB_FEATURE_LA := true
 MOT_SENSOR_HUB_FEATURE_GR := true
 
 # Inherit from the proprietary version
--include vendor/motorola/cedric/BoardConfigVendor.mk
+include vendor/motorola/cedric/BoardConfigVendor.mk
