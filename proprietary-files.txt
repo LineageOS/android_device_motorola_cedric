@@ -119,6 +119,10 @@ vendor/lib/libchromatix_mot_ov5695_postproc.so
 vendor/lib/libchromatix_mot_ov5695_snapshot.so
 vendor/lib/libchromatix_mot_ov5695_snapshot_3a.so
 
+# Camera eeprom - from deen_sprout - PPKS29.68-16-36-14
+vendor/lib/libmmcamera_dw9767_eeprom.so|b40895aff4b22ad16814b9de9147a49408f92c74
+vendor/lib/libmmcamera_ov5695_eeprom.so|e3c068b0c7e5b288cfad3ad421b6b5760057763d
+
 # Camera ISP - from deen_sprout - QPKS30.54-22-12
 vendor/lib/libmmcamera_isp_abf40.so|d5680729e89d11e3c2a863d628c398d2c6ff9784
 vendor/lib/libmmcamera_isp_bcc40.so|83f0882de39934c897809c172bdfa4af2f9c97c4
