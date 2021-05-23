@@ -1,5 +1,5 @@
 # Fingerprint
-/data/.fps(/.*)?                                         u:object_r:fingerprint_data_file:s0
+/data/\.fps(/.*)?                                         u:object_r:fingerprint_data_file:s0
 /sys/devices/soc/7af6000.spi/spi_master/spi6/spi6.0(/.*)? u:object_r:sysfs_devices_fingerprint:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-fpcservice u:object_r:hal_fingerprint_default_exec:s0
 

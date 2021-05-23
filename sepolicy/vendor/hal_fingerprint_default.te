@@ -10,7 +10,7 @@ add_hwservice(hal_fingerprint_default, fpc_extension_service)
 # Allow hal_fingerprint_default to add and find fpc_extension_service
 allow hal_fingerprint_default fpc_extension_service:hwservice_manager { add find };
 
-allow hal_fingerprint_default fingerprint_data_file:dir rw_dir_perms;
+allow hal_fingerprint_default fingerprint_data_file:dir create_dir_perms;
 allow hal_fingerprint_default fingerprint_data_file:file create_file_perms;
 
 allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
