@@ -165,6 +165,9 @@ vendor/lib/libmmcamera_mot_imx258_bear.so
 vendor/lib/libmmcamera_mot_imx258_mono.so
 vendor/lib/libmmcamera_mot_ov5695.so
 
+# Charger - from payton - PPWS29.69-39-2-1
+vendor/bin/charge_only_mode|096651d7856e248d8a6edf0b413cc886e1b5d4dc
+
 # Display calibration
 vendor/etc/qdcm_calib_data_mipi_mot_vid_inx_1080p_497.xml|b844a8f25dbc79ab45891c895ed8e843ecefbe1c
 vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_497.xml|d3552074a939397c7273bf50abd4c3dfcae013fe
