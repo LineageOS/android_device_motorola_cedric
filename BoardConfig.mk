@@ -24,6 +24,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG := cedric_defconfig
+TARGET_KERNEL_RECOVERY_CONFIG := cedric_recovery_defconfig
 
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16879616
