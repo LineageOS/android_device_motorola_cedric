@@ -1,0 +1,1 @@
+require version-baseband=2.0.c1.8-00042-8937_GENNS_PACK-1
