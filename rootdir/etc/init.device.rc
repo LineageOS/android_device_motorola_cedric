@@ -6,8 +6,8 @@ on init && property:ro.boot.hardware.sku=XT1675
 
 on init
     # Change ownership for Pocketmode feature
-    chown system system /sys/devices/soc/7af6000.spi/spi_master/spi6/spi6.0/proximity_state
-    chmod 0660 /sys/devices/soc/7af6000.spi/spi_master/spi6/spi6.0/proximity_state
+    chown system system /sys/bus/spi/devices/spi6.0/proximity_state
+    chmod 0660 /sys/bus/spi/devices/spi6.0/proximity_state
 
 on early-boot
     # STML0 driver parameter permissions

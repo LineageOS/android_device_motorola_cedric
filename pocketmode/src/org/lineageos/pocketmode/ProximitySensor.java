@@ -35,7 +35,7 @@ public class ProximitySensor implements SensorEventListener {
     private static final boolean DEBUG = false;
     private static final String TAG = "PocketModeProximity";
 
-    private static final String FPC_PROX_NODE = "/sys/devices/soc/7af6000.spi/spi_master/spi6/spi6.0/proximity_state";
+    private static final String FPC_PROX_NODE = "/sys/bus/spi/devices/spi6.0/proximity_state";
 
     private SensorManager mSensorManager;
     private Sensor mSensor;
